@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Book Your journey
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <br>
+        <form name="form" id="form" method="post" action="html page" target="_blank" onsubmit="return f0(),f7(),f8(),f1(),f2(),f5(),f6()">
+
+            <div class="top">
+                <div class="top1">Start Your Journey Here </div>
+                <div class="top2"><a href="">HOME</a></div>
+                <div class="top3"><a href="">CARS</a></div>
+                <div class="top4"><a href="">FLIGHTS</a></div>
+                <div class="top5"><a href="">HOTELS</a></div>
+                <div class="top6"><a href="">CONTACT</a></div>
+            </div> <br>
+        
+            <h1>Let The Journey Begin</h1> <br>
+            <div class="typejourney" onclick="return f4()">
+                <div class="oneway"><input type="radio" name="journey" id="typejrn1" value="oneway">One-Way <div>
+                    <div class="return"><input type="radio" name="journey" id="typejrn2" value="oneway">Return</div> 
+            </div>
+            <br><br>
+        
+        <div class="where">
+            <div class="Boardingplace">From: <input type="text" id="from" placeholder="Boarding place"></div>  
+           <div class="destination"> Destination: <input type="text" id="to" placeholder="Destination"></div>
+        </div> 
+        <br><br>
+        <div class="personaldetails">
+                <div class="firstname">
+                First Passenger: <input name="pasone" placeholder="Passenger 1" type="text" id="pasone" pattern="[a-z A-Z]{5,}" title="minimum 5 letters are required">
+                </div>
+                <div class="genderone">
+                    Gender:<input type="radio" name="msex">Male <input type="radio" name="msex">Female 
+                </div> 
+                <div class="secondname">
+                Second Passenger: <input name="pastwo" placeholder="Passenger 2" type="text" id="pastwo" pattern="[a-z A-Z]{5,}" title="minimum 5 letters are required"> 
+                </div>
+                <div class="gendertwo">
+                   Gender:<input type="radio" name="fsex">Male <input type="radio" name="fsex">Female
+                </div>
+            </div>
+
+       
+            <div class="journey">
+                <div class="jd">Date of Journey: <input type="date" id="jd1" onclick="return f3()"></div>
+                <div class="rd">Date of Return: <input type="date" id="rd1" onclick="return f4A()"></div>
+            </div> <br><br>
+        
+            <div class="intouch">Fill Out Contact Details</div> <br>
+        <div class="contactdetails">
+            <div class="mail">E-mail ID: <input type="email" id="email" placeholder="@gmail.com"></div> 
+            <div class="cell"> Mobile No: <input type="text" id="mobile"></div> 
+        </div> <br>
+        <div class="submit"><input type="submit" id="submit" value="click here"></div>
+        </form>
+        <script src="./script.js"> </script>
+    </body>
+</html>
